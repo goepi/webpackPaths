@@ -18,8 +18,6 @@ const getTemplate = (templateName, callback) => {
   }
 };
 
-getTemplate("index", (err, str) => console.log(err, str));
-
 const server = http.createServer((req, res) => {
   getTemplate("index", (err, str) => {
     res.writeHead(200);
