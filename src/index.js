@@ -6,7 +6,7 @@ const getTemplate = (templateName, callback) => {
   if (templateName.length > 0) {
     const templatesDir = path.join(__dirname, "/templates/");
 
-    const filePath = `${templatesDir}/${templateName}.html`;
+    const filePath = `${templatesDir}${templateName}.html`;
 
     console.log(templatesDir, __dirname, filePath);
 
